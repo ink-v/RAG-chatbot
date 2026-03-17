@@ -24,14 +24,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
   py-serve:
     runs-on: ubuntu-latest
     needs: build # Ensures this job runs after 'build' job is completed
     steps:
       - name: Check out
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: py-serve
         uses: ./.github/actions/build-python
